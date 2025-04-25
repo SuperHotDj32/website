@@ -597,7 +597,7 @@ header {
 /* Hamburger menu */
 .hamburger {
   display: none;
-  font-size: 28px;
+  font-size: 38px;
   color: white;
   cursor: pointer;
 }
@@ -862,6 +862,29 @@ header {
   footer .me-5 {
     padding: 0 5px;
   }
+  .nav-links {
+    transition: max-height 0.9s ease;
+    width: 100%;
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    z-index: 99;
+  }
+  #menu-toggle:checked + .hamburger + .nav-links {
+    max-height: 500px; 
+  }
+  .nav-links li {
+    list-style: none;
+    padding: 15px 0;
+  }
+  .nav-links{
+    margin-top: 60px;
+    animation: moveBackground 150s linear infinite; 
+    padding: 30px 100px;
+    border-radius: 60px;
+    box-shadow: 0 10px 20px rgba(127, 11, 190, 0.3); 
+  }
+  
 }
 body {
   padding: 0 15px;
