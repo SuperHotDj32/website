@@ -827,6 +827,32 @@ header {
   .hamburger {
     display: block; /* ενεργοποιείται */
   }
+  .head1 {
+    font-family: 'freight-big-pro'; 
+    letter-spacing: -5px;
+    font-size: 48px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 10px; 
+    
+    background-color:transparent;
+    text-shadow: 
+  
+    3px 3px 5px rgba(72, 0, 255, 3),  
+    -3px -3px 8px rgba(255, 0, 255, 2); 
+  }
+  .home-description1 {
+    background-color: transparent;
+    text-shadow: 3px 3px 5px rgb(48, 5, 82), -3px -3px 8px rgba(255, 0, 85, 0.3);
+    color: #ffffff;
+    padding: 0px 15px;
+    font-size: 25px;
+    font-weight: bold;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px 0; /* Απόσταση μεταξύ τους */
+    display: block;
+  }
 }
 body {
   padding: 0 15px;
