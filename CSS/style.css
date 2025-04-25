@@ -403,9 +403,9 @@ header {
     border-radius: 50%;
     object-fit: cover; 
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
-    opacity: 0; 
-    transform: translateY(20px); 
-    animation: fadeInUp 1s ease forwards; 
+    opacity: 0; /* Ξεκινά με αόρατη εικόνα */
+    transform: translateY(20px); /* Κίνηση από κάτω προς τα πάνω */
+    animation: fadeInUp 1s ease forwards; /* Ώστε να γίνει ορατή και να μετακινηθεί */
   }
   
   /* Κείμενο */
@@ -416,11 +416,14 @@ header {
     animation: fadeInUp 1s ease 0.3s forwards; 
   }
   
-  /* Animation εμφάνισης */
   @keyframes fadeInUp {
-    to {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(0); /* Το τελικό σημείο της κίνησης */
     }
   }
 .scroll-to-top-btn {
