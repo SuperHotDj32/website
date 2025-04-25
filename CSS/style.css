@@ -93,11 +93,12 @@ section {
     align-items: center;     /* Ευθυγράμμιση στο κέντρο */
     text-align: center;      /* Ευθυγράμμιση του κειμένου */
   }
-.logo-img {
-  max-width: 100px;
-  height: auto;
-  animation: rgbGlow 3s infinite alternate;
-}
+  .logo img {
+    width: 100px; 
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
 @keyframes rgbGlow {
   0% {
     filter: drop-shadow(0 0 8px red);
@@ -796,4 +797,49 @@ footer .border-bottom {
   footer .copyright {
       margin-top: 10px;
   }
+}
+@media screen and (max-width: 768px) {
+  .home2,
+  .home3,
+  .home4 {
+    font-size: 16px;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .menu {
+    display: none; /* κρύβεται το κανονικό menu */
+  }
+
+  .hamburger {
+    display: block; /* ενεργοποιείται */
+  }
+}
+body {
+  padding: 0 15px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
