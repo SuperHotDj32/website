@@ -423,19 +423,6 @@ header {
       transform: translateY(0);
     }
   }
-  
-  /* Responsive για μικρές οθόνες */
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column; 
-      text-align: center;
-    }
-  
-    .about-img img {
-      width: 200px;
-      height: auto;
-    }
-  }
 .scroll-to-top-btn {
     position: fixed;
     bottom: 20px;
@@ -798,15 +785,6 @@ footer .border-bottom {
       margin-top: 10px;
   }
 }
-@media screen and (max-width: 768px) {
-  .home2,
-  .home3,
-  .home4 {
-    font-size: 16px;
-    padding: 20px;
-    flex-direction: column;
-  }
-}
 header {
   display: flex;
   justify-content: space-between;
@@ -814,7 +792,6 @@ header {
   padding: 10px 20px;
   flex-wrap: wrap;
 }
-
 @media (max-width: 768px) {
   .logo img {
     width: 80px;
@@ -862,6 +839,28 @@ header {
     text-align: center;
     margin: 10px 0;
     display: block;
+  }
+    /* Εικόνα προφίλ */
+    .about-img img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover; 
+      box-shadow: 0 0 20px rgba(38, 0, 255, 0.5); 
+      opacity: 0; 
+      transform: translateY(20px); 
+      animation: fadeInUp 1s ease forwards; 
+    }
+      /* Κείμενο */
+  .about-text {
+    justify-items: center;
+  }
+  .iconsfot {
+    display:grid;
+    gap: 15px;
+  }
+  footer .me-5 {
+    padding: 0 5px;
   }
 }
 body {
