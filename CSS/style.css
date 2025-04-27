@@ -46,6 +46,8 @@ section {
   }
   /* Το navigation menu - λίστα με τα links */
   .nav-links {
+    animation: moveBackground 150s linear infinite; 
+    border-radius: 60px;
     list-style: none; 
     display:flex; 
     justify-content: flex-end; 
@@ -443,6 +445,7 @@ header {
     animation: moveBackground 400s linear infinite; 
     min-height: auto;
     margin: 0;
+    height: 100%;
     padding: 0 40px;
     box-sizing: border-box;
     position: relative;
@@ -632,9 +635,9 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  margin-left: -40px;
-  margin-right: -40px;
-  
+  margin-left: -20px;
+  margin-right: -20px;
+
 }
 footer .container {
   max-width: 1140px;
