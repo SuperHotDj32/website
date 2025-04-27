@@ -632,6 +632,9 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
+  margin-left: -40px;
+  margin-right: -40px;
+  
 }
 footer .container {
   max-width: 1140px;
