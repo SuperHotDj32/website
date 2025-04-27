@@ -387,26 +387,7 @@ header {
   box-shadow: none;
   transform: translateY(0);
 }
-    
-/* Wrapper για το section */
-.about-container {
-    display: flex; 
-    align-items: center; 
-    gap: 40px; 
-    flex-wrap: wrap; 
-  }
-  
-  /* Εικόνα προφίλ */
-  .about-img img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover; 
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
-    opacity: 0; /* Ξεκινά με αόρατη εικόνα */
-    transform: translateY(20px); /* Κίνηση από κάτω προς τα πάνω */
-    animation: fadeInUp 1s ease forwards; /* Ώστε να γίνει ορατή και να μετακινηθεί */
-  }
+
   
   /* Κείμενο */
   .about-text {
@@ -501,61 +482,17 @@ header {
     min-height: 100vh;
   }
   .about-container {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 80px;
+  padding: 60px 20px;
   gap: 40px;
   flex-wrap: wrap;
 }
-
-.about-text {
-  flex: 1;
-  min-width: 300px;
-  color: #fff;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
 .about-img {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
   justify-content: center;
   align-items: center;
-
-
-}
-
-.about-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-}
-.about-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 80px;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 300px;
-  color: #fff;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.about-img {
-  flex: 1;
-  min-width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0px 80px;
 }
 
 .about-img img {
@@ -843,20 +780,14 @@ header {
     margin: 10px 0;
     display: block;
   }
-    /* Εικόνα προφίλ */
-    .about-img img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover; 
-      box-shadow: 0 0 20px rgba(38, 0, 255, 0.5); 
-      opacity: 0; 
-      transform: translateY(20px); 
-      animation: fadeInUp 1s ease forwards; 
-    }
-      /* Κείμενο */
+  .about-container {
+  display:flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
   .about-text {
-    justify-items: center;
+    justify-items:center;
+    
   }
   .iconsfot {
     display:grid;
