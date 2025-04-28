@@ -508,29 +508,46 @@ header {
 }
 /*My Work Section*/
 .photo-gallery .container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0; /* Καμία απόσταση ανάμεσα στις εικόνες */
+  width: 100%;
 }
-
+.row{
+  flex: 1 1 30%;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+.row > img {
+  width: 100%;
+  transition: .5s;
+}
+.row:hover { flex: 1 1 40%; }
+.row:hover > img {
+  width: 100%;
+  height: 100%;
+}
 .photo-item {
-  flex-basis: 48%; /* Εξασφαλίζει ότι οι εικόνες παίρνουν το ίδιο πλάτος */
-  position:relative;
-  overflow: hidden;  /* Βοηθάει να μην ξεχειλίζουν οι εικόνες αν είναι μεγαλύτερες */
+  width: 100%;
+  height: 250px; /* Σταθερό ύψος για ομοιομορφία */
+  overflow: hidden;
+  position: relative;
   
 }
 
 .photo-item img {
   width: 100%;
-  object-fit: cover; /* Κάνει την εικόνα να καλύπτει το χώρο χωρίς να παραμορφώνεται */
+  height: 100%;
+  object-fit: cover; /* Κάνει την εικόνα να καλύπτει όλο το κουτί χωρίς να χαλάει */
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  width: 100%;
-  height: auto;
 }
 
 .photo-item:hover img {
   transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
