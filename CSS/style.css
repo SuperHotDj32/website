@@ -509,44 +509,26 @@ header {
 /*My Work Section*/
 .photo-gallery .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 0; /* Καμία απόσταση ανάμεσα στις εικόνες */
   width: 100%;
 }
-.row{
-  flex: 1 1 30%;
-  overflow: hidden;
-  transition: .5s;
-  margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
-  line-height: 0;
-}
-.row > img {
-  width: 100%;
-  transition: .5s;
-}
-.row:hover { flex: 1 1 40%; }
-.row:hover > img {
-  width: 100%;
-  height: 100%;
-}
 .photo-item {
-  width: 100%;
+  width: auto;
   height: 250px; /* Σταθερό ύψος για ομοιομορφία */
   overflow: hidden;
   position: relative;
   
 }
-
 .photo-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Κάνει την εικόνα να καλύπτει όλο το κουτί χωρίς να χαλάει */
+  object-fit:fill;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .photo-item:hover img {
-  transform: scale(1.05);
+  transform: scale(1.15);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
