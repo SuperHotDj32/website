@@ -1,7 +1,6 @@
-/* {
-  outline: 1px solid red; 
-} 
-*/
+* {
+  outline: 1px solid red; /* Εφαρμόζει κόκκινο περίγραμμα σε όλα τα στοιχεία */
+}
 /* Επαναφέρει τα default margins και paddings για ομοιομορφία σε όλα τα browsers */
 * {
     margin: 0;
@@ -502,12 +501,43 @@ header {
 
 .about-img img {
   width: 100%;
-  max-width: 700px; 
+  max-width: 200px; 
   height: auto;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
+/*My Work Section*/
+.photo-gallery .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
+.photo-item {
+  flex-basis: 48%; /* Εξασφαλίζει ότι οι εικόνες παίρνουν το ίδιο πλάτος */
+  position:relative;
+  overflow: hidden;  /* Βοηθάει να μην ξεχειλίζουν οι εικόνες αν είναι μεγαλύτερες */
+  
+}
+
+.photo-item img {
+  width: 100%;
+  object-fit: cover; /* Κάνει την εικόνα να καλύπτει το χώρο χωρίς να παραμορφώνεται */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  width: 100%;
+  height: auto;
+}
+
+.photo-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .photo-item {
+    flex: 1 1 100%; /* Σε μικρότερες οθόνες, κάθε εικόνα θα έχει το 100% πλάτος */
+  }
+}
 /* Βασικό στυλ */
 .navbar {
   display: flex;
@@ -805,8 +835,12 @@ header {
 }
   .about-text {
     justify-items:center;
-    
   }
+@media (max-width: 768px) {
+  .photo-item {
+    flex: 1 1 100%; /* Σε μικρότερες οθόνες, κάθε εικόνα θα έχει το 100% πλάτος */
+  }
+}
   .iconsfot {
     display:grid;
     gap: 15px;
