@@ -484,14 +484,16 @@ header {
     position: relative;
     min-height: 100vh;
   }
-  .about-container {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 20px;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 .about-img {
   justify-content: center;
   align-items: center;
