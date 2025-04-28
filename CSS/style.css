@@ -512,6 +512,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 0; /* Καμία απόσταση ανάμεσα στις εικόνες */
   width: 100%;
+  padding: 10px 0px;
 }
 .photo-item {
   width: auto;
@@ -530,6 +531,15 @@ header {
 .photo-item:hover img {
   transform: scale(1.15);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.container-work {
+  background-color: rgba(0, 0, 0, 0.781); 
+    padding: 0px 100px;
+    font-size: 15px;
+    font-weight:inherit;
+    text-align: center;
+    margin: 10px 0;
+    display: block;
 }
 
 @media (max-width: 768px) {
