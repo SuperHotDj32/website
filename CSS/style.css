@@ -397,6 +397,9 @@ header {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease 0.3s forwards; 
+    background-color: rgba(0, 0, 0, 0.781); /* Μαύρο background με 50% διαφάνεια */
+    padding: 0px 15px;
+    font-size: 15px;
   }
   
   @keyframes fadeInUp {
@@ -484,16 +487,13 @@ header {
     position: relative;
     min-height: 100vh;
   }
+/* Wrapper για το section */
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    gap: 40px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  display: flex; 
+  align-items: center; 
+  gap: 40px; 
+  flex-wrap: wrap; 
+}
 .about-img {
   justify-content: center;
   align-items: center;
