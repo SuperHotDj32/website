@@ -571,6 +571,42 @@ header {
   width: 100%;
   height: 100%;
 }
+/*CERTIFICATES*/
+.certificates-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+.certificates-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.certificate {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificate img {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.certificate p {
+  max-width: 600px;
+  margin-top: 15px;
+  font-size: 1.1em;
+  text-align: center;
+}
 @media (max-width: 768px) {
   .photo-item {
     flex: 1 1 100%; /* Σε μικρότερες οθόνες, κάθε εικόνα θα έχει το 100% πλάτος */
@@ -707,7 +743,6 @@ footer {
   text-align: center;
   margin-left: -20px;
   margin-right: -20px;
-
 }
 footer .container {
   max-width: 1140px;

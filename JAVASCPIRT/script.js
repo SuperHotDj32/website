@@ -156,3 +156,13 @@ const dropdownMenu = document.querySelector('.dropdown-menu');
 hamburger.addEventListener('click', () => {
   dropdownMenu.classList.toggle('show');
 });
+// Certificates
+document.addEventListener("DOMContentLoaded", function () {
+  const zoomableImages = document.querySelectorAll(".zoomable");
+
+  zoomableImages.forEach(img => {
+    img.addEventListener("click", () => {
+      img.classList.toggle("zoomed");
+    });
+  });
+});
