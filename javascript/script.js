@@ -204,3 +204,11 @@ window.addEventListener("load", () => {
     magnify(img.id, 2);
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll("img.zoomable");
+
+  images.forEach((img, index) => {
+    if (!img.id) img.id = `cert${index + 1}`;
+    magnify(img.id, 2);
+  });
+});
