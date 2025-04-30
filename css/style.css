@@ -623,10 +623,11 @@ header {
   margin-bottom: 10px;
   line-height: 1.6;
 }
-#cert2,
-#cert4,
-#cert5 {
-  width: 4000px;
+
+#cert3,
+#cert5,
+#cert6 {
+  width: 400px;
 }
 
 @media (max-width: 768px) {
