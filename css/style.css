@@ -618,18 +618,30 @@ header {
   list-style-type: disc;
   padding-left: 20px;
 }
-
+h1{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
 .certificate-description li {
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
-#cert3,
-#cert5,
-#cert6 {
-  width: 400px;
+#cert3{
+  width: 100%;
+  max-width: 400px;
+  margin-top: -200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 1);
 }
-
+#cert4{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 1);
+}
 @media (max-width: 768px) {
   .photo-item {
     flex: 1 1 100%; /* Σε μικρότερες οθόνες, κάθε εικόνα θα έχει το 100% πλάτος */
