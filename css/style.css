@@ -152,7 +152,7 @@ section {
 header {
   position: sticky;
   top: 0;
-  background: url('../images/Generic/abstractbluelight.jpg');
+  background: url('../images/Generic/abstractbluelight.webp');
   background-size: cover;
   height: 130px;
   z-index: 1000;
