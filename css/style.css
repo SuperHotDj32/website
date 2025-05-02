@@ -1007,3 +1007,115 @@ img {
   object-fit: cover;
   border-radius: 10px;
 }
+/* πίνακας */
+.table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0; 
+  padding: 0; 
+  padding: 20px 200px;
+}
+
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif; 
+  background-color: #000000; 
+  table-layout: auto; 
+}
+
+th, td {
+  padding: 12px 15px; 
+  text-align: left; 
+  border: 1px solid #00b7ff; 
+}
+
+th {
+  background-color: #175ab1; 
+  color: rgb(0, 0, 0); 
+}
+
+tr:nth-child(even) {
+  background-color: #000000; 
+}
+
+tr:hover {
+  background-color: #1a195c; 
+}
+
+td {
+  font-size: 16px; 
+}
+
+td, th {
+  border-radius: 5px; 
+}
+
+table, th, td {
+  transition: all 0.3s ease-in-out; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto; 
+    margin: 0; 
+    padding: 0; 
+  }
+
+  table {
+    width: 100%;
+    max-width: 100%; 
+    table-layout: auto; 
+  }
+
+  th, td {
+    word-wrap: break-word; 
+  }
+}
+/* Επικοινωνια */
+.contact-info {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 183, 255, 0.3);
+  margin: 40px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-info h2 {
+  color: #00b7ff;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    padding: 20px;
+  }
+
+  .contact-info li {
+    font-size: 15px;
+  }
+}
