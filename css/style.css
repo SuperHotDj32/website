@@ -174,7 +174,7 @@ header {
 
 /* 1η εικονα Settings Welcome*/
 .home {
-  background-image: url('../images/itdarkoffice night.jpg'); 
+  background-image: url('../images/itdarkoffice\ night.jpg'); 
   background-size: cover; /* Η εικόνα θα καλύψει όλη την περιοχή χωρίς παραμόρφωση */
   background-position: center center; /* Κεντράρισμα εικόνας */
   background-repeat: no-repeat; 
@@ -222,7 +222,7 @@ header {
 }
 /* 3η εικονα Settings */
 .home3 {
-  background-image: url('../images/learningonlineeducation.jpg'); /* άλλαξε το path αν χρειάζεται */
+  background-image: url('../images/Certi.jpg'); /* άλλαξε το path αν χρειάζεται */
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
@@ -247,7 +247,7 @@ header {
 }
 /* 4η εικονα Settings */
 .home4 {
-  background-image: url('../images/competitivefriends.jpg'); /* άλλαξε το path αν χρειάζεται */
+  background-image: url('../images/gaming.jpg'); /* άλλαξε το path αν χρειάζεται */
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
@@ -272,7 +272,7 @@ header {
 }
 /* 5η εικονα Settings */
 .home5 {
-  background-image: url('../images/closeupdjworking.jpg'); /* άλλαξε το path αν χρειάζεται */
+  background-image: url('../images/3d-music-related-scene.jpg'); /* άλλαξε το path αν χρειάζεται */
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
