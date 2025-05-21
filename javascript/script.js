@@ -5,7 +5,12 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
-
+window.onload = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
 document.addEventListener('DOMContentLoaded', function () {
   // Κουμπί "scroll to top"
   const button = document.getElementById('show');
