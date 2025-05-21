@@ -12,11 +12,12 @@ window.onload = function () {
   });
 };
 window.addEventListener("load", () => {
+  setTimeout(() => {
     const preloader = document.getElementById("preloader");
-    setTimeout(() => {
-      preloader.style.display = "none";
-    }, 4000); // 3s video + 1s fade
-  });
+    preloader.style.display = "none";
+  }, 5500);  // λίγο παραπάνω από το fade out (1s + 3.5s delay)
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   // Κουμπί "scroll to top"
   const button = document.getElementById('show');
