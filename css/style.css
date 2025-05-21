@@ -509,28 +509,61 @@ body.gaming-page {
     position: relative;
     min-height: 100vh;
   }
-/* Wrapper για το section */
+/* ABOUT */
 .about-container {
-  display: flex; 
-  align-items: center; 
-  gap: 40px; 
-  flex-wrap: wrap; 
+  display: flex;
+  flex-direction: row; /* Κείμενο αριστερά, εικόνα δεξιά */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* Για responsive */
+  padding: 40px 0;
 }
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
 .about-img {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 80px;
+  padding: 0;
 }
-body .about-img img {
+
+.about-img img {
   width: 300px;
   height: auto;
-}
-.about-img img {
-  margin-bottom: 5px; /* φέρνει την εικόνα πιο κοντά στο κείμενο */
-  vertical-align: middle;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(5, 139, 46, 0.6); /* Green glow */
+  margin-bottom: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(4, 119, 62, 0.9); /* Stronger glow on hover */
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Στοιχίζει κάθετα */
+    text-align: center;     /* Κεντράρει το κείμενο */
+  }
+
+  .about-text,
+  .about-img {
+    flex: none;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .about-img img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 /* HOBBIES */
 .dj-about {
