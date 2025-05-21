@@ -11,6 +11,12 @@ window.onload = function () {
     behavior: "smooth"
   });
 };
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 4000); // 3s video + 1s fade
+  });
 document.addEventListener('DOMContentLoaded', function () {
   // Κουμπί "scroll to top"
   const button = document.getElementById('show');

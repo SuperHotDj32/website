@@ -15,7 +15,7 @@ section {
   box-sizing: border-box;
   padding: 60px 20px;
 }
-  /* Logo */
+/* Logo */
   .logo {
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ section {
     text-shadow: 0 0 10px #000000;
     margin-right: 100px;
   }
-  /* Rgb Fade LOGO */
+/* Rgb Fade LOGO */
   @keyframes rgbFade {
     0% {
       text-shadow: 0 0 10px rgb(39, 120, 218), 0 0 5px rgb(0, 76, 255);
@@ -44,7 +44,7 @@ section {
   nav {
     display: flex;
   }
-  /* Το navigation menu - λίστα με τα links */
+/* Το navigation menu - λίστα με τα links */
   .nav-links {
     animation: moveBackground 150s linear infinite; 
     border-radius: 60px;
@@ -54,7 +54,7 @@ section {
     gap: 30px; 
   }
   
-  /* Τα links μέσα στο μενού */
+/* Τα links μέσα στο μενού */
   .nav-links a {
     text-decoration: none; 
     color: #ffffff; 
@@ -112,7 +112,47 @@ section {
     filter: drop-shadow(0 0 8px magenta);
   }
 }
+/* Loading Screen */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; /* Προαιρετικό φόντο */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1s ease 3s forwards;
+  overflow: hidden;
+}
 
+/* Fullscreen video */
+#loading-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+  pointer-events: none;
+}
+
+/* Fade In animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade Out animation */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between; 
