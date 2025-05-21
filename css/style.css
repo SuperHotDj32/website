@@ -599,14 +599,14 @@ body.gaming-page {
   width: 300px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(5, 139, 46, 0.6); /* Green glow */
+  box-shadow: 0 0 20px rgba(54, 2, 114, 0.6); /* Green glow */
   margin-bottom: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-img img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(4, 119, 62, 0.9); /* Stronger glow on hover */
+  box-shadow: 0 0 30px rgba(2, 129, 146, 0.9); /* Stronger glow on hover */
 }
 @media (max-width: 768px) {
   .about-container {
@@ -874,17 +874,9 @@ h1{
   color: white;
   cursor: pointer;
 }
-
-/* Χρύση του menu-toggle για το drop-down */
+/* Χρήση του menu-toggle για το drop-down */
 #menu-toggle {
   display: none;
-}
-.about-img img {
-  width: 100%;
-  max-width: 500px; 
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 /* Responsive styles */
 @media (max-width: 1263px) {
