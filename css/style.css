@@ -461,6 +461,24 @@ header {
     color: #ffffff; 
     line-height: 1.6;
   }
+body.gaming-page {
+    background-image: url('../images/Hobbies/check4.jpg'); 
+    background-size: contain; 
+    background-position: center center; 
+    background-repeat: repeat; 
+    animation: moveBackground 400s linear infinite; 
+    min-height: auto;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif; 
+    background-color: #000000; 
+    color: #ffffff; 
+    line-height: 1.6;
+  }
   /* Δημιουργία του εφέ γύρω από τα περιθώρια */
   body::before {
     content: '';
@@ -513,6 +531,72 @@ body .about-img img {
   vertical-align: middle;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+/* HOBBIES */
+.dj-about {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; /* Αυτό γυρνάει την σειρά των div */
+}
+
+.dj-image {
+  flex: 1;
+  max-width: 400px;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.dj-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(5, 139, 46, 0.6); /* Glow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dj-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(4, 119, 62, 0.9);
+}
+
+.dj-text {
+  flex: 2;
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 20px;
+  animation: fadeInUp 1s ease 0.3s forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dj-about {
+    flex-direction: column;
+  }
+
+  .dj-image,
+  .dj-text {
+    max-width: 100%;
+  }
+
+  .dj-text {
+    margin-top: 20px;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /*My Work Section*/
 .photo-gallery .container {
