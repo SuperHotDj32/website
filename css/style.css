@@ -236,7 +236,7 @@ header {
 
 /* 1η εικονα Settings Welcome*/
 .home {
-  background-image: url('../images/itdarkoffice\ night.webp'); 
+  background-image: url('../images/itdarkoffice-night.webp'); 
   background-size: cover; /* Η εικόνα θα καλύψει όλη την περιοχή χωρίς παραμόρφωση */
   background-position: center center; /* Κεντράρισμα εικόνας */
   background-repeat: no-repeat; 
@@ -367,20 +367,20 @@ header {
   margin: 10px 0; /* Απόσταση μεταξύ τους */
   display: block;
 }
-/* Settings Paragraph Home*/
+/* Settings Paragraph Home text-shadow: 3px 3px 5px rgb(81, 0, 255, 3),  -3px -3px 8px rgb(255, 0, 85, 1);*/
 .home-description2 {
   background-color:transparent;
-  text-shadow: 3px 3px 5px rgba(81, 0, 255, 3),  -3px -3px 8px rgba(255, 0, 85, 1); /* Δεύτερη σκιά (ροζ) */
+  text-shadow: 3px 3px 5px rgb(72, 0, 255, 3),-3px -3px 8px rgb(255, 0, 255, 2);
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 10px;
-  display: inline-block; 
+  display: inline-block;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
-/* Settings Home hadings */
+/* Settings Home hadings*/
 .head1 {
   font-family: 'freight-big-pro'; 
   letter-spacing: -5px;
@@ -388,14 +388,9 @@ header {
   font-weight: bold; 
   text-align: center; 
   margin-bottom: 10px; 
-  
   background-color:transparent;
-  text-shadow: 
-
-  3px 3px 5px rgba(72, 0, 255, 3),  
-  -3px -3px 8px rgba(255, 0, 255, 2); 
+  text-shadow: 3px 3px 5px rgb(72, 0, 255, 3),-3px -3px 8px rgb(255, 0, 255, 2);
 }
-
 /* Στυλ για το κουμπί */
 .btn {
   display: block; 
@@ -421,7 +416,7 @@ header {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
@@ -1095,9 +1090,7 @@ header {
     -3px -3px 8px rgba(255, 0, 255, 2); 
   }
   .about-text{
-    background-color: rgba(0, 0, 0, 0.781); 
-    color: #ffffff; 
-    padding: 0px 15px;
+    background-color: rgba(0, 0, 0, 0.781);
     font-size: 15px;
     font-weight:inherit;
     text-align: center;
@@ -1182,7 +1175,7 @@ img {
 /* πίνακας */
 .table-container {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; /* Vendor-specific για καλύτερο scroll στο iOS */
   margin: 0; 
   padding: 0; 
   padding: 20px 200px;
