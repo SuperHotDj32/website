@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box; 
     scroll-behavior: smooth;
+    flex: 1;
   }
 /* Γενικά για κάθε section */
 section {
@@ -969,8 +970,8 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -40px;
+  margin-right: -40px;
   margin-bottom: 0px;
 }
 footer .container {
