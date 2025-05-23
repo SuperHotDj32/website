@@ -1,13 +1,13 @@
 /* * {
-  outline: 1px solid red; /* Εφαρμόζει κόκκινο περίγραμμα σε όλα τα στοιχεία 
-} 
+  outline: 1px solid red; 
+}
 */
 /* Επαναφέρει τα default margins και paddings για ομοιομορφία σε όλα τα browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    scroll-behavior: smooth; /* Ομαλό scroll όταν πατάς στα links του μενού */
+    scroll-behavior: smooth;
   }
 /* Γενικά για κάθε section */
 section {
@@ -45,7 +45,6 @@ section {
   nav {
     display: flex;
   }
-/* Το navigation menu - λίστα με τα links */
   .nav-links {
     animation: moveBackground 150s linear infinite; 
     border-radius: 60px;
@@ -54,21 +53,15 @@ section {
     justify-content: flex-end; 
     gap: 30px; 
   }
-  
-/* Τα links μέσα στο μενού */
   .nav-links a {
     text-decoration: none; 
     color: #ffffff; 
     transition: color 0.3s; 
     white-space: nowrap;
   }
-  
-  /* Όταν περνάς το ποντίκι πάνω από ένα link */
   .nav-links a:hover {
     color: #3ec0e0; 
   }
-
-  /* Βασικό στυλ για κάθε section της σελίδας */
   .section {
     padding: 100px 0; 
   }
@@ -132,6 +125,7 @@ section {
     width: auto;
     margin: 0;
     padding-right: 50px;
+    
   }
 }
   .container {
@@ -151,12 +145,11 @@ section {
     margin: 0 auto;
     padding: 10px 20px;
     box-sizing: border-box;
-  
     display: flex;
-    flex-direction: column;  /* Τα στοιχεία θα μπουν το ένα κάτω από το άλλο */
-    justify-content: center; /* Ευθυγράμμιση στο κέντρο */
-    align-items: center;     /* Ευθυγράμμιση στο κέντρο */
-    text-align: center;      /* Ευθυγράμμιση του κειμένου */
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
   }
   .logo img {
     width: 100px; 
@@ -292,10 +285,10 @@ header {
 /* 1η εικονα Settings Welcome*/
 .home {
   background-image: url('../images/itdarkoffice-night.webp'); 
-  background-size: cover; /* Η εικόνα θα καλύψει όλη την περιοχή χωρίς παραμόρφωση */
-  background-position: center center; /* Κεντράρισμα εικόνας */
+  background-size: cover; 
+  background-position: center center; 
   background-repeat: no-repeat; 
-  height: 100vh; /* Ύψος 100% της οθόνης */
+  height: 100vh; 
   border-radius: 50px;                 
   display: flex;
   font-family: SpaceGrotesk-Medium;
@@ -308,9 +301,9 @@ header {
   color: rgb(255, 255, 255);
   margin-bottom: 100px;
   max-width: 100%;
-  position: relative; /* Διασφαλίζει ότι το περιεχόμενο μπορεί να είναι πάνω στην εικόνα */
-  padding: 0 50px; /* 50px απόσταση από δεξιά και αριστερά */
-  box-sizing: border-box; /* Περιλαμβάνει το padding στο συνολικό πλάτος */
+  position: relative; 
+  padding: 0 50px; 
+  box-sizing: border-box; 
   transition: transform 0.5s ease-out;
 }
 
@@ -339,7 +332,7 @@ header {
 }
 /* 3η εικονα Settings */
 .home3 {
-  background-image: url('../images/Certi.webp'); /* άλλαξε το path αν χρειάζεται */
+  background-image: url('../images/Certi.webp'); 
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
@@ -364,7 +357,7 @@ header {
 }
 /* 4η εικονα Settings */
 .home4 {
-  background-image: url('../images/gaming.webp'); /* άλλαξε το path αν χρειάζεται */
+  background-image: url('../images/gaming.webp'); 
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
@@ -389,7 +382,7 @@ header {
 }
 /* 5η εικονα Settings */
 .home5 {
-  background-image: url('../images/3d-music-related-scene.webp'); /* άλλαξε το path αν χρειάζεται */
+  background-image: url('../images/3d-music-related-scene.webp'); 
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
@@ -419,10 +412,10 @@ header {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin: 10px 0; /* Απόσταση μεταξύ τους */
+  margin: 10px 0; 
   display: block;
 }
-/* Settings Paragraph Home text-shadow: 3px 3px 5px rgb(81, 0, 255, 3),  -3px -3px 8px rgb(255, 0, 85, 1);*/
+/* Settings Paragraph Home */
 .home-description2 {
   background-color:transparent;
   text-shadow: 3px 3px 5px rgb(72, 0, 255, 3),-3px -3px 8px rgb(255, 0, 255, 2);
@@ -446,7 +439,6 @@ header {
   background-color:transparent;
   text-shadow: 3px 3px 5px rgb(72, 0, 255, 3),-3px -3px 8px rgb(255, 0, 255, 2);
 }
-/* Στυλ για το κουμπί */
 .btn {
   display: block; 
   margin: 20px auto 0; 
@@ -461,7 +453,6 @@ header {
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
 }
-/* Στυλ για το κουμπί */
 .buttonme {
   appearance: none;
   background-color: #000000;
@@ -482,32 +473,28 @@ header {
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
   user-select: none;
   touch-action: manipulation;
-  white-space: nowrap; /* ΕΜΠΟΔΙΖΕΙ τα κείμενα να πάνε σε δεύτερη γραμμή */
-  width: auto; /* Όχι σταθερό πλάτος */
-  max-width: 90%; /* Για να μην "ξεχειλώνει" σε μικρές οθόνες */
+  white-space: nowrap; 
+  width: auto; 
+  max-width: 90%; 
   margin-bottom: 40px;
 }
-/* Στυλ για το κουμπί */
 .buttonme:disabled {
   pointer-events: none;
 }
-/* Στυλ για το κουμπί */
 .buttonme:hover {
   box-shadow: rgba(25, 0, 255, 0.25) 0 8px 15px;
   transform: translateY(-4px);
 }
-/* Στυλ για το κουμπί */
 .buttonme:active {
   box-shadow: none;
   transform: translateY(0);
 }
-
 .h2{
   text-align: center;
 }
 /* Κείμενο */
 .about-text {
-  display: inline-block; /* ✅ Αυτό το κάνει να τυλίγει μόνο το περιεχόμενο */
+  display: inline-block; 
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease 0.3s forwards;
@@ -515,6 +502,8 @@ header {
   padding: 0px 15px;
   font-size: 15px;
   border-radius: 20px;
+  flex: 1;
+  min-width: 300px;
 }
   
   @keyframes fadeInUp {
@@ -524,23 +513,23 @@ header {
     }
     100% {
       opacity: 1;
-      transform: translateY(0); /* Το τελικό σημείο της κίνησης */
+      transform: translateY(0); 
     }
   }
 .scroll-to-top-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 70px; /* Πλάτος κουμπιού */
-    height: 70px; /* Ύψος κουμπιού */
-    font-size: 18px; /* Μέγεθος γραμματοσειράς */
+    width: 70px; 
+    height: 70px; 
+    font-size: 18px; 
     background-color: #9514db;
     color: #ffffff;
     border: none;
-    border-radius: 50%; /* Στρογγυλό κουμπί */
+    border-radius: 50%; 
     display: flex;
-    justify-content: center; /* Κεντράρει οριζόντια */
-    align-items: center; /* Κεντράρει κάθετα */
+    justify-content: center; 
+    align-items: center; 
     box-shadow: 0 3px 10px rgba(34, 9, 200, 0.5);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -549,7 +538,6 @@ header {
     background-color: #4a00b8;
     transform: translateY(-4px);
   }
-
   @keyframes moveBackground {
     0% { background-position: 0 0; }
     100% { background-position: 200% 200%; }
@@ -591,7 +579,7 @@ body.gaming-page {
     color: #ffffff; 
     line-height: 1.6;
   }
-  /* Δημιουργία του εφέ γύρω από τα περιθώρια */
+/* Δημιουργία του εφέ γύρω από τα περιθώρια */
   body::before {
     content: '';
     position: absolute;
@@ -600,10 +588,10 @@ body.gaming-page {
     right: 0;
     bottom: 0;
     z-index: -1;
-    padding: 10px; /* Απόσταση γύρω από την περιοχή */
+    padding: 10px; 
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
-    border-radius: 20px; /* Αν θέλεις στρογγυλεμένες γωνίες */
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5); /* Shadow effect γύρω από τα περιθώρια */
+    border-radius: 20px; 
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5); 
     pointer-events: none;
 }
 /* Ορίζουμε το particles background */
@@ -615,28 +603,21 @@ body.gaming-page {
   height: auto; 
   z-index: -1;
   pointer-events: none;
-}
-  
-  .home, .another-section {
+}  
+.home, .another-section {
     position: relative;
     min-height: 100vh;
   }
 /* ABOUT */
 .about-container {
   display: flex;
-  flex-direction: row; /* Κείμενο αριστερά, εικόνα δεξιά */
+  flex-direction: row; 
   align-items: center;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap; /* Για responsive */
+  flex-wrap: wrap; 
   padding: 40px 0;
 }
-
-.about-text {
-  flex: 1;
-  min-width: 300px;
-}
-
 .about-img {
   flex: 1;
   display: flex;
@@ -645,28 +626,24 @@ body.gaming-page {
   padding: 0;
   margin-right: 30px;
 }
-
 .about-img img {
   width: 300px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(54, 2, 114, 0.6); /* Green glow */
+  box-shadow: 0 0 20px rgba(54, 2, 114, 0.6); 
   margin-bottom: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-right: 30px;
 }
-
 .about-img img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(2, 129, 146, 0.9); /* Stronger glow on hover */
+  box-shadow: 0 0 30px rgba(2, 129, 146, 0.9); 
 }
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column; /* Στοιχίζει κάθετα */
-    text-align: center;     /* Κεντράρει το κείμενο */
+    flex-direction: column; 
+    text-align: center; 
   }
-
-  .about-text,
   .about-img {
     flex: none;
     width: 100%;
@@ -685,9 +662,8 @@ body.gaming-page {
   gap: 40px;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse; /* Αυτό γυρνάει την σειρά των div */
+  flex-direction: row-reverse; 
 }
-
 .dj-image {
   flex: 1;
   max-width: 400px;
@@ -697,20 +673,17 @@ body.gaming-page {
   align-items: center;
   padding: 0px 20px;
 }
-
 .dj-image img {
   width: 100%;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(5, 139, 46, 0.6); /* Glow */
+  box-shadow: 0 0 20px rgba(5, 139, 46, 0.6); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .dj-image img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 30px rgba(4, 119, 62, 0.9);
 }
-
 .dj-text {
   flex: 2;
   background-color: rgba(0, 0, 0, 0.781);
@@ -721,7 +694,6 @@ body.gaming-page {
   opacity: 0;
   transform: translateY(20px);
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .dj-about {
@@ -779,30 +751,27 @@ body.gaming-page {
   display: block;
 }
 .photo-item {
-  flex: 0 0 calc(33.333% - 10px); /* 3 φωτογραφίες σε σειρά */
-  margin-bottom: 10px; /* Απόσταση κάτω αν χρειάζεται */
+  flex: 0 0 calc(33.333% - 10px); 
+  margin-bottom: 10px; 
 }
-
 .photo-item img {
   width: 100%;
-  height: 300px; /* Σταθερό ύψος για όλες */
-  object-fit: cover; /* Να γεμίζουν τέλεια */
+  height: 300px; 
+  object-fit: cover; 
   display: block;
 }
 .video-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Δημιουργεί στήλες για τα βίντεο */
-  gap: 20px; /* Απόσταση μεταξύ των βίντεο */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+  gap: 20px; 
   width: 100%;
   padding: 20px;
 }
-
 .video-item {
   position: relative;
   overflow: hidden;
   background: #000;
 }
-
 .video-item iframe {
   width: 100%;
   height: 100%;
@@ -811,30 +780,26 @@ body.gaming-page {
 .zoomable {
   transition: transform 0.5s ease;
   cursor: zoom-in;
-  transform-origin: right center;  /* <-- Προστέθηκε */
+  transform-origin: right center;  
 }
-
 .zoomable:hover {
   transform: scale(1.8);
   z-index: 10;
   position: relative;
 }
-
 .certificates-section {
   padding: 2rem;
   text-align: center;
 }
-
 .certificate {
   display: flex;
-  align-items: center;        /* Κάθετη στοίχιση στο κέντρο */
-  justify-content: center;    /* Οριζόντια στο κέντρο */
+  align-items: center; 
+  justify-content: center; 
   gap: 2rem;
   margin: 2rem auto;
-  flex-wrap: wrap;            /* Για responsiveness */
+  flex-wrap: wrap;  
   max-width: 900px;
 }
-
 .certificate img {
   width: 100%;
   max-width: 300px;
@@ -842,12 +807,10 @@ body.gaming-page {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 183, 255, 1);
 }
-
 .certificate-description {
   max-width: 400px;
   text-align: left;
 }
-
 .certificate-description ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -860,7 +823,6 @@ h1{
   margin-bottom: 10px;
   line-height: 1.6;
 }
-
 #cert3{
   width: 100%;
   max-width: 400px;
@@ -883,7 +845,7 @@ h1{
 }
 @media (max-width: 768px) {
   .photo-item {
-    flex: 1 1 100%; /* Σε μικρότερες οθόνες, κάθε εικόνα θα έχει το 100% πλάτος */
+    flex: 1 1 100%;
   }
 }
 /* Βασικό στυλ */
@@ -896,27 +858,22 @@ h1{
   border-radius: 50px;
   position: relative;
 }
-
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 30px; /* Αυξήσαμε την απόσταση μεταξύ των στοιχείων */
+  gap: 30px;
 }
-
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 18px; /* Αυξήσαμε το μέγεθος της γραμματοσειράς */
-  padding: 10px 20px; /* Αυξήσαμε το padding για μεγαλύτερη περιοχή κλικ */
-  border-radius: 5px; /* Προσθήκη rounding στις γωνίες */
-  transition: background-color 0.3s ease; /* Προσθήκη εφέ κατά την πλοήγηση */
+  font-size: 18px; 
+  padding: 10px 20px;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
 }
-
-/* Εφέ hover για καλύτερη εμπειρία χρήστη */
 .nav-links li a:hover {
   background-color: #444;
 }
-
 /* Hamburger menu */
 .hamburger {
   display: none;
@@ -924,34 +881,33 @@ h1{
   color: white;
   cursor: pointer;
 }
-/* Χρήση του menu-toggle για το drop-down */
 #menu-toggle {
   display: none;
 }
 /* Responsive styles */
 @media (max-width: 1263px) {
   .nav-links {
-    display: none; /* Κρύβει το μενού όταν είναι κλειστό */
+    display: none; 
     position: absolute;
-    top: 60%; /* Τοποθετεί το μενού κατακόρυφα στο κέντρο */
-    left: 30%; /* Τοποθετεί το μενού οριζόντια στο κέντρο */
+    top: 60%; 
+    left: 30%; 
     background: url('../images/Generic/abstractbluelight.webp');
     border-radius: 28px;
     flex-direction: column;
-    padding: 40px 30px; /* Μειώσαμε το padding για πιο μικρό μενού */
+    padding: 40px 30px; 
     z-index: 999;
-    width: 250px; /* Κάνουμε το μενού μεγαλύτερο σε πλάτος */
-    justify-content: space-evenly; /* Κατανέμει ισομερώς το περιεχόμενο μέσα στο μενού */
-    align-items: center; /* Ευθυγραμμίζει τα στοιχεία κάθετα */
+    width: 250px; 
+    justify-content: space-evenly; 
+    align-items: center; 
   }
 
-  /* Όταν το checkbox είναι checked, το μενού γίνεται visible */
-  #menu-toggle:checked + .hamburger + .nav-links {
+/* Όταν το checkbox είναι checked, το μενού γίνεται visible */
+#menu-toggle:checked + .hamburger + .nav-links {
     display:flex;
   }
 
-  .hamburger {
-    display: block; /* Εμφάνιση του hamburger σε mobile */
+.hamburger {
+    display: block; 
   }
 }
 @media (max-width: 1200px) {
@@ -1007,9 +963,9 @@ h1{
 }
 /* Footer Styling */
 footer {
-  width: auto; /* Ορίζει το πλάτος στο 100% της οθόνης */
-  margin: 0; /* Μηδενίζει τα περιθώρια */
-  padding: 50px 0; /* Ρύθμιση padding αν χρειάζεται */
+  width: auto; 
+  margin: 0; 
+  padding: 50px 0; 
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -1020,7 +976,7 @@ footer {
 footer .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px; /* Για αποστάσεις στα πλάγια σε μικρές οθόνες */
+  padding: 0 15px; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1039,35 +995,35 @@ footer a:hover {
   color: #158bdb;
 }
 footer a {
-  color: #fff; /* Άσπρο χρώμα για τους συνδέσμους */
-  text-decoration: none; /* Αφαίρεση υπογράμμισης */
-  margin-right: 20px; /* Απόσταση μεταξύ των εικονιδιών */
+  color: #fff; 
+  text-decoration: none; 
+  margin-right: 20px; 
 }
 
 footer .d-flex {
   display: flex;
-  align-items: center; /* Ευθυγραμμίζει τα εικονίδια κατακόρυφα στο κέντρο */
+  align-items: center;
 }
 
 footer .me-4 {
-  margin-right: 6px; /* Απόσταση μεταξύ των συνδέσμων */
+  margin-right: 6px;
 }
 footer .me-5 {
-  margin-left: 0; /* Το κείμενο να μένει τελείως αριστερά */
-  margin-right: auto; /* Αυτόματα να διατηρείται η απόσταση από τα εικονίδια */
+  margin-left: 0; 
+  margin-right: auto; 
 }
 
 footer a:hover {
-  color: #158bdb; /* Μωβ χρώμα όταν γίνεται hover */
+  color: #158bdb;
 }
 
 footer .text-uppercase {
-  text-transform: uppercase; /* Κείμενο με κεφαλαία */
+  text-transform: uppercase; 
   text-align: center;
 }
 
 footer .fas, footer .fab {
-  font-size: 1.5rem; /* Μέγεθος εικονιδίων */
+  font-size: 1.5rem; 
 }
 
 
@@ -1082,27 +1038,27 @@ footer .text-center {
 }
 
 footer .me-4 {
-  margin-right: 1rem; /* Απόσταση μεταξύ των social media εικονιδίων */
+  margin-right: 1rem;
   
 }
 
 
 footer .border-bottom {
-  border-bottom: 1px solid #7c4dff; /* Μωβ γραμμή κάτω από τις ενότητες */
+  border-bottom: 1px solid #7c4dff; 
 }
 /* Media Queries για μικρές οθόνες */
 @media (max-width: 768px) {
   footer .footer-links {
-      flex-direction: column;  /* Κατάργηση flex row για μικρές οθόνες */
-      gap: 10px;  /* Μείωση του κενού μεταξύ των στοιχείων */
+      flex-direction: column;  
+      gap: 10px;  
   }
 
   footer .footer-links a {
-      font-size: 1rem;  /* Μικρότερο μέγεθος γραμματοσειράς για μικρές οθόνες */
+      font-size: 1rem;  
   }
 
   footer {
-      padding: 30px 10px;  /* Λιγότερο padding για μικρές οθόνες */
+      padding: 30px 10px;  
   }
 
   footer .copyright {
@@ -1122,11 +1078,11 @@ header {
   }
 
   .menu {
-    display: none; /* κρύβεται το κανονικό menu */
+    display: none; 
   }
 
   .hamburger {
-    display: block; /* ενεργοποιείται */
+    display: block; 
   }
   .head1 {
     font-family: 'freight-big-pro'; 
@@ -1151,9 +1107,9 @@ header {
     display: block;
   }
   .home-description1 {
-    background-color: rgba(0, 0, 0, 0.781); /* Μαύρο background με 50% διαφάνεια */
+    background-color: rgba(0, 0, 0, 0.781); 
     text-shadow: 3px 3px 5px rgb(48, 5, 82), -3px -3px 8px rgba(255, 0, 85, 0.3);
-    color: #ffffff; /* Το κείμενο παραμένει λευκό */
+    color: #ffffff; 
     padding: 0px 15px;
     font-size: 25px;
     font-weight: bold;
@@ -1162,7 +1118,7 @@ header {
     display: block;
   }
   .home-description2 {
-    background-color: rgba(0, 0, 0, 0.781); /* Μαύρο background με 50% διαφάνεια */
+    background-color: rgba(0, 0, 0, 0.781); 
     text-shadow: 3px 3px 5px rgb(48, 5, 82), -3px -3px 8px rgba(255, 0, 85, 0.3);
     color: #ffffff; /* Το κείμενο παραμένει λευκό */
     padding: 0px 15px;
@@ -1275,6 +1231,36 @@ table, th, td {
   transition: all 0.3s ease-in-out; 
 }
 
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.8rem; 
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.9rem;
+  }
+
+  .navbar {
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 375px) {
+  .logo {
+    font-size: 1.5rem;
+    max-width: 70%;
+  }
+
+  .hamburger {
+    transform: none;
+
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .table-container {
