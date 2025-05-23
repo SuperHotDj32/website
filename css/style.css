@@ -554,7 +554,6 @@ header {
     margin: 0;
     height: 100%;
     overflow-x: hidden;
-    padding: 0 40px;
     box-sizing: border-box;
     position: relative;
     font-family: 'Segoe UI', sans-serif; 
@@ -970,8 +969,6 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  margin-left: -40px;
-  margin-right: -40px;
   margin-bottom: 0px;
 }
 footer .container {
