@@ -843,6 +843,11 @@ h1{
     font-size: 17px;
     max-width: 90%; /* ώστε να μην φτάνει στα άκρα */
   }
+  .about-text {
+    padding: 0 20px;
+    font-size: 17px;
+    max-width: 90%; /* ώστε να μην φτάνει στα άκρα */
+  }
 }
 @media (max-width: 768px) {
   .about-img img {
