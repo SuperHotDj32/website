@@ -70,7 +70,68 @@ section {
   .section {
     padding: 100px 0; 
   }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+    width: auto;
+    margin: 0;
+    padding-right: 50px;
+  }
+}
   .container {
     width: 100%;
     max-width: 100%;
@@ -160,6 +221,23 @@ body.loading {
   }
 }
 @media (max-width: 768px) {
+  .photo-gallery .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .photo-item {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .photo-item img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+@media (max-width: 768px) {
   .video-wrapper {
     width: 100vw;
     height: 100vh;
@@ -174,31 +252,6 @@ body.loading {
     transform: scale(1);
     object-fit: contain;
   }
-}
-.navbar {
-  display: flex;
-  justify-content: space-between; 
-  width: 100%;
-  padding: 0 20px;
-  align-items: center;
-  padding: 10px 30px;
-  position: relative;
-}
-.navbar .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-.navbar .nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.navbar .nav-links li a:hover {
-  color: #00ffff;
 }
 .main-header {
   position: fixed;
@@ -722,8 +775,6 @@ body.gaming-page {
   text-align: center;
   margin: 10px 0;
   display: block;
-  backface-visibility: hidden;
-  will-change: transform;
 }
 .photo-item {
   flex: 0 0 calc(33.333% - 10px); /* 3 φωτογραφίες σε σειρά */
