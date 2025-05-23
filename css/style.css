@@ -182,7 +182,7 @@ section {
   align-items: center;
   overflow: hidden;
   opacity: 1;
-  animation: fadeOutSimple 1s ease 2.2s forwards;
+  animation: fadeOutSimple 1s ease 3s forwards;
 }
 .video-wrapper {
   width: 100vw;

@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     const preloader = document.getElementById("preloader");
     preloader.style.display = "none";
-  }, 2500);  // λίγο παραπάνω από το fade out (1s + 3.5s delay)
+  }, 3200); 
 });
 
 document.addEventListener('DOMContentLoaded', function () {
