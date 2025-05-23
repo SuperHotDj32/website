@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box; 
     scroll-behavior: smooth;
-    flex: 1;
   }
 /* Γενικά για κάθε section */
 section {
@@ -554,12 +553,12 @@ header {
     margin: 0;
     height: 100%;
     overflow-x: hidden;
+    padding: 0 40px;
     box-sizing: border-box;
     position: relative;
     font-family: 'Segoe UI', sans-serif; 
     background-color: #000000; 
     color: #ffffff; 
-    line-height: 1.6;
   }
 body.gaming-page {
     background-image: url('../images/Hobbies/check4.jpg'); 
@@ -969,9 +968,9 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
+  margin-left: -40px;
+  margin-right: -40px;
   margin-bottom: 0px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 footer .container {
   max-width: 1140px;
