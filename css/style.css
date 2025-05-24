@@ -717,63 +717,58 @@ body.gaming-page {
   }
 }
 /*My Work Section*/
+/* Container for section heading */
+.container-work {
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 20px 40px;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  color: #fff;
+}
+
+/* Updated photo gallery layout */
 .photo-gallery .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 10px;
-  width: 100%;
-  padding: 10px 0;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 .photo-item {
-  overflow: hidden;
   position: relative;
-  height: 300px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #111;
 }
+
 .photo-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 .photo-item:hover img {
-  transform: scale(1.1);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
-.container-work {
-  background-color: rgba(0, 0, 0, 0.781); 
-  padding: 0px 100px;
-  font-size: 15px;
-  font-weight:inherit;
-  text-align: center;
-  margin: 10px 0;
-  display: block;
+
+/* Remove row-specific layout since Grid handles it */
+.photo-gallery .row {
+  display: contents;
 }
-.photo-item {
-  flex: 0 0 calc(33.333% - 10px); 
-  margin-bottom: 10px; 
-}
-.photo-item img {
-  width: 100%;
-  height: 300px; 
-  object-fit: cover; 
-  display: block;
-}
-.video-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-  gap: 20px; 
-  width: 100%;
-  padding: 20px;
-}
-.video-item {
-  position: relative;
-  overflow: hidden;
-  background: #000;
-}
+
+/* Responsive iframe (if used later) */
 .video-item iframe {
   width: 100%;
   height: 100%;
+  border: none;
 }
 /*CERTIFICATES*/
 .zoomable {
