@@ -65,6 +65,37 @@ document.addEventListener('DOMContentLoaded', () => {
   updateSlidePosition();
   startInterval();
 });
+// Click Photos Work for full screen
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("photo-modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.getElementById("modal-close");
+
+  const photoImages = document.querySelectorAll(".photo-item img");
+
+  if (!modal || !modalImg || !closeBtn || photoImages.length === 0) {
+    console.warn("Modal ή εικόνες δεν βρέθηκαν στο DOM.");
+    return;
+  }
+
+  photoImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modal.classList.add("show");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+    }
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   // Κουμπί "scroll to top"
