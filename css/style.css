@@ -751,24 +751,79 @@ body.gaming-page {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  user-select: none;
+}
+
+/* Όταν κλικάρεις στην εικόνα - toggle zoom */
+.photo-item img.zoomed {
+  transform: scale(1.5);
+  z-index: 9999;
+  position: relative;
+  box-shadow: 0 0 20px rgba(124, 77, 255, 0.8);
 }
 
 .photo-item:hover img {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
-
 /* Remove row-specific layout since Grid handles it */
 .photo-gallery .row {
   display: contents;
 }
+.slider-container {
+  position: relative;
+  max-width: 900px;
+  height: 500px; /* Σταθερό ύψος */
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  background-color: #111;
+}
 
-/* Responsive iframe (if used later) */
-.video-item iframe {
-  width: 100%;
+.slider-wrapper {
+  display: flex;
+  width: calc(100% * 12); /* Βάλε εδώ τον αριθμό των εικόνων */
   height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-wrapper img {
+  width: calc(100% / 12);  /* Κάθε μία να πιάνει 1/12 του πλάτους */
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(20,20,20,0.7);
   border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: rgba(20,20,20,0.9);
+}
+
+.prev-btn {
+  left: 15px;
+}
+
+.next-btn {
+  right: 15px;
 }
 /*CERTIFICATES*/
 .zoomable {

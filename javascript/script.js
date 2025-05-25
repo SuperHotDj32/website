@@ -17,7 +17,70 @@ window.addEventListener("load", () => {
     preloader.style.display = "none";
   }, 3200); 
 });
+//work 
+const sliderWrapper = document.getElementById('slider-wrapper');
+const slides = sliderWrapper.querySelectorAll('img');
+const totalSlides = slides.length;
 
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+let currentIndex = 0;
+let slideInterval;
+
+function updateSlidePosition() {
+  sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function showNextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateSlidePosition();
+}
+
+function showPrevSlide() {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  updateSlidePosition();
+}
+
+nextBtn.addEventListener('click', () => {
+  showNextSlide();
+  resetInterval();
+});
+
+prevBtn.addEventListener('click', () => {
+  showPrevSlide();
+  resetInterval();
+});
+
+function startInterval() {
+  slideInterval = setInterval(showNextSlide, 3000);
+}
+
+function resetInterval() {
+  clearInterval(slideInterval);
+  startInterval();
+}
+
+// Initialize
+updateSlidePosition();
+startInterval();
+
+// Επιλογή όλων των εικόνων στις photo-item
+const photoImages = document.querySelectorAll('.photo-item img');
+
+photoImages.forEach(img => {
+  img.addEventListener('click', () => {
+    // Αν η εικόνα έχει ήδη zoom, την επαναφέρουμε
+    if (img.classList.contains('zoomed')) {
+      img.classList.remove('zoomed');
+    } else {
+      // Αφαιρούμε zoom από όλες πρώτα (για να μην μείνουν πολλαπλές zoomed)
+      photoImages.forEach(i => i.classList.remove('zoomed'));
+      // Προσθέτουμε zoom στην κλικάρισμένη
+      img.classList.add('zoomed');
+    }
+  });
+});
 document.addEventListener('DOMContentLoaded', function () {
   // Κουμπί "scroll to top"
   const button = document.getElementById('show');
