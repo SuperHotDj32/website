@@ -18,52 +18,53 @@ window.addEventListener("load", () => {
   }, 3200); 
 });
 //work 
-const sliderWrapper = document.getElementById('slider-wrapper');
-const slides = sliderWrapper.querySelectorAll('img');
-const totalSlides = slides.length;
+document.addEventListener('DOMContentLoaded', () => {
+  const sliderWrapper = document.getElementById('slider-wrapper');
+  const slides = sliderWrapper.querySelectorAll('img');
+  const totalSlides = slides.length;
 
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
 
-let currentIndex = 0;
-let slideInterval;
+  let currentIndex = 0;
+  let slideInterval;
 
-function updateSlidePosition() {
-  sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+  function updateSlidePosition() {
+    sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
 
-function showNextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlidePosition();
+  }
+
+  function showPrevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlidePosition();
+  }
+
+  function startInterval() {
+    slideInterval = setInterval(showNextSlide, 3000);
+  }
+
+  function resetInterval() {
+    clearInterval(slideInterval);
+    startInterval();
+  }
+
+  prevBtn.addEventListener('click', () => {
+    showPrevSlide();
+    resetInterval();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    showNextSlide();
+    resetInterval();
+  });
+
   updateSlidePosition();
-}
-
-function showPrevSlide() {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateSlidePosition();
-}
-
-nextBtn.addEventListener('click', () => {
-  showNextSlide();
-  resetInterval();
-});
-
-prevBtn.addEventListener('click', () => {
-  showPrevSlide();
-  resetInterval();
-});
-
-function startInterval() {
-  slideInterval = setInterval(showNextSlide, 3000);
-}
-
-function resetInterval() {
-  clearInterval(slideInterval);
   startInterval();
-}
-
-// Initialize
-updateSlidePosition();
-startInterval();
+});
 
 // Επιλογή όλων των εικόνων στις photo-item
 const photoImages = document.querySelectorAll('.photo-item img');
